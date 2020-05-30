@@ -36,15 +36,18 @@ class _HomePageState extends State<HomePage> {
       )),
       body: _pages[_selectedPageIndex]['screen'],
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Theme.of(context).primaryColor,
         type: BottomNavigationBarType.shifting,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.camera),
             title: Text('Capture'),
+            backgroundColor: Theme.of(context).primaryColor,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
             title: Text('History'),
+            backgroundColor: Theme.of(context).primaryColor,
           )
         ],
         currentIndex: _selectedPageIndex,
